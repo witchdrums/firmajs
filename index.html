@@ -12,6 +12,36 @@
     <title>Captura de firma</title>
 </head>
 <body>
+    <form action="" class="firma-pad-form" method="post">
+        <h1>Contrato de ProInvest Latinoamerica</h1>
+        <p></p>
+
+        <p> <stron>Firma</stron> </p>
+
+        <div class="firma-pad-contenedor texto-centrado">
+            <canvas class="firma-pad"></canvas>
+        </div>
+        
+        <p>
+            <a href="#" class="boton-limpiar boton-accion">Limpiar</a>
+            <a href="#" class="boton-imagen boton-accion">Descargar</a>
+            <a href="#" class="boton-contrato boton-accion">Imprimir contrato</a>
+        </p>
+
+        <button class="boton-enviar" type="submit">ENVIAR</button>
+
+        <div class="firma-resultado-contenedor texto-centrado">
+
+        </div>
+    </form>
     
+
+    <script defer src="firma.js"></script>
+    <script>
+        if (window.opener){
+            document.querySelector("#firma").src = window.opener.obtenerImagen();
+            window.print();
+        }
+    </script>
 </body>
 </html>
