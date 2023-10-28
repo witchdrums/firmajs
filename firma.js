@@ -63,7 +63,7 @@ window.obtenerImagen = (e) =>{
     return canvas.toDataURL();
 };
 
-botonContrato.addEventListener("click", () =>{
+botonContrato.addEventListener("click", (e) =>{
     e.preventDefault();
     const ventana = window.open("contrato.html");
 });
