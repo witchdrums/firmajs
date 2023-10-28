@@ -13,19 +13,19 @@
 </head>
 <body>
     <form action="" class="firma-pad-form" method="post">
-        <h1>Contrato de ProInvest Latinoamerica</h1>
-        <p></p>
+        <h1>Contrato de ProInvest Latinoamérica</h1>
+        <p>Contrato de solicitud de inversión con la empresa líder mundial en México, ProInvest Latinoamérica.</p>
 
-        <p> <stron>Firma</stron> </p>
+        <p> <strong>Firma</strong> </p>
 
         <div class="firma-pad-contenedor texto-centrado">
             <canvas class="firma-pad"></canvas>
         </div>
         
         <p>
-            <a href="#" class="boton-limpiar boton-accion">Limpiar</a>
-            <a href="#" class="boton-imagen boton-accion">Descargar</a>
-            <a href="#" class="boton-contrato boton-accion">Imprimir contrato</a>
+            <a href="#" class="boton-limpiar boton-accion">Limpiar</a> |
+            <a href="#" class="boton-imagen boton-accion">Descargar</a> |
+            <a href="contrato.html" target="popup" onclick="" class="boton-contrato boton-accion">Imprimir contrato</a>
         </p>
 
         <button class="boton-enviar" type="submit">ENVIAR</button>
@@ -35,13 +35,5 @@
         </div>
     </form>
     
-
-    <script defer src="firma.js"></script>
-    <script>
-        if (window.opener){
-            document.querySelector("#firma").src = window.opener.obtenerImagen();
-            window.print();
-        }
-    </script>
 </body>
 </html>

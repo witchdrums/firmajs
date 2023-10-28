@@ -7,7 +7,7 @@ const botonContrato = document.querySelector('.boton-contrato');
 const ctx = canvas.getContext('2d');
 let modoEscritura = false;
 let xAnterior = 0, yAnterior = 0, xActual = 0, yActual = 0;
-const Color = "blue";
+const COLOR = "blue";
 const GROSOR = 2;
 
 form.addEventListener('submit', (e) => {
@@ -58,7 +58,8 @@ botonImagen.addEventListener("click", (e) => {
     enlace.click();
 });
 
-window.obtenerImagen() = () =>{
+
+window.obtenerImagen = (e) =>{
     return canvas.toDataURL();
 };
 
